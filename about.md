@@ -1,15 +1,19 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "lastgleam"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+일본 도쿄에서 2년차 개발자로 살아가고 있습니다.
+블로그에는 주로 저의 소회를 남기고 있고, 좋은 글이 있으면 번역하거나, 일본생활에 대해서도 이야기해보고자 합니다. 
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+잘 부탁드립니다.
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
+mail : lastgleam@gmail.com
 
-Thanks for reading!
+###contribute
+
+- 이 블로그는 [Jekyll](https://jekyllrb-ja.github.io/) + [GitHub pages](https://pages.github.com/)의 구성으로 만들었습니다.
+- 폰트 색상은 [uiGradients](https://uigradients.com/)의 [Socialive](https://uigradients.com/#Socialive)를 사용했습니다.
+- 테마는 [chesterhow](https://github.com/chesterhow/)의 [tale](https://github.com/chesterhow/tale/)을 사용했습니다.
