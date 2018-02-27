@@ -55,7 +55,7 @@ start커맨드가 `node index.js`여야 하는데 `npm start`로 시작되고 �
 
 https://socket-chat-lastgleam.herokuapp.com/
 
-##
+##에필로그
 
 처음에 heroku의 웹사이트에서 직접 빈 프로젝트를 작성하면 `heroku remote`부터 시작하는 deploy절차가 표시된다. 그 절차에는 start script가 `npm start`일 때를 디폴트로 갖고 있어서, Procfile을 생성하여 설정을 바꿔줄 필요가 있던 것.
 Procfile은 heroku의 start command를 변경하는 방법이니까, `package.json`의 `scripts.start`안에 `web : node index.js`라고 작성해두면 굳이 heroku에서 설정때문에 고생할 필요도 없고, heroku가 아닌 다른 방식으로 배포할 때에도 문제될게 없을 듯 하다.
