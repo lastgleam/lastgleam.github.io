@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2018-02-19 TIL"
+title:  "psql 팁"
 author: "lastgleam"
 ---
 

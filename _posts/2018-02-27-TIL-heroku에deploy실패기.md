@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2018-02-27 TIL"
+title:  "heroku에 socket.io앱 deploy실패기"
 author: "lastgleam"
 ---
 

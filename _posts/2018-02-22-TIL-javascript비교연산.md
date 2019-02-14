@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2018-02-22 TIL"
+title:  "JavaScript 비교연산자"
 author: "lastgleam"
 —
 #javascript에서의 `==`와 `===`의 차이
