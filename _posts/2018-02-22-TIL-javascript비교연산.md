@@ -2,8 +2,10 @@
 layout: post
 title:  "JavaScript 비교연산자"
 author: "lastgleam"
-—
-#javascript에서의 `==`와 `===`의 차이
+---
+
+# JavaScript에서의 `==`와 `===`의 차이
+
 다들 처음 자바스크립트를 처음배울 때 자주 듣는 말이 있다.  
 > 왠만하면 `===`으로 값 비교해라
 
