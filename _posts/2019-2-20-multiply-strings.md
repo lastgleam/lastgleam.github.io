@@ -4,7 +4,9 @@ title:  "[leetcode]multiply-strings"
 author: "lastgleam"
 ---
 URL : https://leetcode.com/problems/multiply-strings/
+
 ３時間くらい頑張っても解けず、諦めた。
+
 ```javascript
 /**
  * @param {string} num1
