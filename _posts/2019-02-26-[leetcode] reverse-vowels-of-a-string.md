@@ -9,7 +9,8 @@ URL : [https://leetcode.com/problems/reverse-vowels-of-a-string/](https://leetco
 일단 처음 작성한 답안은 다음과 같다.
 
 > Runtime: 3260 ms, faster than 5.13% of JavaScript online submissions for Reverse Vowels of a String.
-Memory Usage: 43.9 MB, less than 31.03% of JavaScript online submissions for Reverse Vowels of a String.
+> 
+> Memory Usage: 43.9 MB, less than 31.03% of JavaScript online submissions for Reverse Vowels of a String.
 
 ```javascript
 /**
