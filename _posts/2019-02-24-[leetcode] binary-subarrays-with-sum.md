@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[leetcode] binary-subarrays-with-sum"
+title:  "[leetcode] Binary Subarrays With Sum"
 author: "lastgleam"
 ---
 URL : [[https://leetcode.com/problems/binary-subarrays-with-sum/](https://leetcode.com/problems/binary-subarrays-with-sum/)

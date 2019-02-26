@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title:  "[leetcode] reverse-vowels-of-a-string"
+title:  "[leetcode] Reverse Vowels of a String"
 author: "lastgleam"
 ---
 URL : [https://leetcode.com/problems/reverse-vowels-of-a-string/](https://leetcode.com/problems/reverse-vowels-of-a-string/)
