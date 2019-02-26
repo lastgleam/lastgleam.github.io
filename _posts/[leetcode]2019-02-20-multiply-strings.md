@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[leetcode]multiply-strings"
+title:  "[leetcode] multiply-strings"
 author: "lastgleam"
 ---
 URL : https://leetcode.com/problems/multiply-strings/

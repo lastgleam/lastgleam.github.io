@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[leetcode]two-sum"
+title:  "[leetcode] two-sum"
 author: "lastgleam"
 ---
 URL : [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
