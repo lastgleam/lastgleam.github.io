@@ -1,4 +1,4 @@
-[---
+---
 layout: post
 title:  "[leetcode] Add To Array Form Of Integer"
 author: "lastgleam"
