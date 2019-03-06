@@ -14,7 +14,6 @@ int를 배열로 바꾼 후 길이가 짧은 배열에 0을 unshift하여 넣어
 >
 > Memory Usage: 42 MB, less than 29.31% of JavaScript online submissions for Add to Array-Form of Integer.
 
-
 ```javascript
 /**
  * @param {number[]} A
