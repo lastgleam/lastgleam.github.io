@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Core JavaScript 2.実行コンテキスト２"
+title: "Core JavaScript 2.実行コンテキスト - ホイスティングと関数式"
 author: "lastgleam"
 ---
 
