@@ -24,7 +24,7 @@ author: "lastgleam"
 
  で構成される。
 
- ## LexicalEnvironment
+## LexicalEnvironment
 
  `lexical`の意味
   > 「語彙的（な）」・「語彙の」
