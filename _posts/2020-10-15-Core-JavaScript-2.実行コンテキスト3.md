@@ -43,7 +43,7 @@ console.log(a);     //------(3)
 
 - グローバルコンテキスト
   - LexicalEnvironment（L.E）
-    - environmentRecord（e）: a, outer
+    - environmentRecord（e）: a, hoge
 - hogeの実行コンテキスト
   - L.E
     - e: fuga
@@ -82,7 +82,7 @@ hoge();
 console.log(a);
 ```
 
-関数宣言と関数表現の例ですでに分かる通り、コードの安全性のためグローバル変数を宣言するのは避けるべきだ。
+関数宣言と関数式ですでに分かる通り、コードの安全性のためグローバル変数を宣言するのは避けるべきだ。
 
 ## this
 
