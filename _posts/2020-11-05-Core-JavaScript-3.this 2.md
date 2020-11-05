@@ -10,7 +10,7 @@ author: "lastgleam"
 ## 目次
 
 - 状況によって変わるthis
-  - コールバック関数呼び出す時のthis
+  - コールバック関数を呼び出す時のthis
   - コンストラクタ内部のthis
 - thisをbindingする方法
   - callメソッド
@@ -24,7 +24,7 @@ author: "lastgleam"
 ### コールバック関数呼び出す時のthis
 
 - コールバック関数とは
-  - ある関数を関数またはメソッドBに引き渡す関数
+  - 関数またはメソッドに引き渡される関数
   - 基本的にグローバルオブジェクトを参照するが引き渡された関数で`this`を指定した場合はそれを参照する。
 
 ```javascript
@@ -41,8 +41,8 @@ document.body.querySelector('#hoge').addEventListener('click', function (e) {
   console.log(this, e); // {3} buttonエレメントとMouseEventが出力される
 });
 ```
-`addEventListener`は呼び出し元をthisとして指定すように定義されていて、グローバルオブジェクトのwindowでなくbuttonエレメントが出力される。
 
+`addEventListener`は呼び出し元をthisとして指定すように定義されていて、グローバルオブジェクトのwindowでなくbuttonエレメントが出力される。
 
 ### コンストラクタ内部のthis
 
@@ -63,8 +63,8 @@ var ibushi = new User('Ibushi Kota', 38);
 
 console.log(naitoh, ibushi);
 / *
-  User { shopName: 'Naitoh Tetsuya's home', name: Naitoh Tetsuya, age: 38}
-  User { shopName: 'Ibushi Kota's home', name: Ibushi Kota, age: 38}
+  User { shopName: 'Naitoh Tetsuya's home', name: Naitoh Tetsuya, age: 38 }
+  User { shopName: 'Ibushi Kota's home', name: Ibushi Kota, age: 38 }
 * /
 ```
 
@@ -154,6 +154,7 @@ var obj = {
 };
 obj.outer(); // obj
 ```
+
 `call`, `apply`, `bind`も使わずにthisを参照することができてさらに簡潔になる。
 
 ## まとめ
@@ -169,12 +170,10 @@ obj.outer(); // obj
     - コールバックによって異なるが、定義されてない場合は`window`
   - コンストラクタ
     - 生成されるインスタンス
-
 - `this`バインド
   - `call`、`apply`は`this`を指定し即時実行する
   - `bind`は`this`を指定し新しい関数を生成する
   - アロー関数は`this`を持たない
-
 
 ### 参考文献
 
