@@ -298,9 +298,12 @@ coffeeMaker();
 
 ## 出典・参考文献
 
-- 非同期処理:コールバック/Promise/Async Function. JavaScript Primer（https://jsprimer.net/basic/async/）
-- JavaScriptとコールバック地獄. Yahoo! JAPAN Tech Blog（https://techblog.yahoo.co.jp/programming/js_callback/）
-- Async Flow: From callback hell to promise to Async-Await. Quyet Vu（https://medium.com/@quyetvv/async-flow-from-callback-hell-to-promise-to-async-await-2da3ecfff997）
+- 非同期処理:コールバック/Promise/Async Function. JavaScript Primer
+  - https://jsprimer.net/basic/async/
+- JavaScriptとコールバック地獄. Yahoo! JAPAN Tech Blog
+  - https://techblog.yahoo.co.jp/programming/js_callback/
+- Async Flow: From callback hell to promise to Async-Await. Quyet Vu
+  - https://medium.com/@quyetvv/async-flow-from-callback-hell-to-promise-to-async-await-2da3ecfff997
 
 
 　
