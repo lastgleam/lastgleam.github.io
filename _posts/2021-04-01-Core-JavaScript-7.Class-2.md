@@ -18,7 +18,7 @@ author: "lastgleam"
 
 ## prototypeによるクラスの実現
 
-ES6から`class`が導入される前はどのように実現したか。
+ES6から`class`が導入される前はどのようにclass実現したか理解する。
 
 ### 基本実装
 
@@ -56,8 +56,8 @@ g.push(70);
 console.log(g); // Grade: { 0: 70, 1:80, 2:90, length:1 }
 ```
 
-`length`を削除したことで`g.length`が`g.__proto__.length`を参照することになった。
-`push`で1個追加されたので、`g.length`は0→1になる。
+`length`を削除することで`g.length`が`g.__proto__.length`を参照することになる。
+`push`で要素が1個追加されて`g.length`は0→1になる。
 
 #### RectangleとSquareの例
 
@@ -86,7 +86,7 @@ var sq = new Square(5);
 console.log(sq.getArea()); // 25
 ```
 
-そもそも正方形は長方形に対して四つの辺の長さが等しいという条件を追加された概念なので
+そもそも正方形は長方形に四つの辺の長さが等しいという条件が追加された図形なので
 長方形を親クラス、正方形を子クラスとして抽象化することができる。
 
 ```javascript
@@ -175,6 +175,7 @@ console.log(sq.super('getArea')()); // 100
 ## ES6からのクラスと継承
 
 ES6（ECMAScript2015）からは`class`文法が正式導入された。
+上の実装をせず`class`・`super`・`extends`等のキーワードを使ってクラスを定義することができる。
 ただし、ES6のクラスもprototypeで実現されたのでJavaScriptがプロトタイプベース言語であることに変わりはない。
 
 > JavaScriptのclass文法はあくまでプロトタイプを使って他の言語のクラスに相当することを実現するためのシンタックスシュガー(糖衣構文)に過ぎません。[^1]
