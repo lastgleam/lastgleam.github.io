@@ -247,13 +247,13 @@ sq.getArea(); // size is 100
 
 ## まとめ
 
-- JavaScriptにはそもそもクラスと継承の概念が存在しない。
+- JavaScriptにはそもそもクラスと継承の概念が存在しない
 - プロトタイプメソッドとスタティックメソッド
-  - プロトタイプ内部に定義されたメソッドはプロトタイプメソッドと呼ばれ、インスタンスから呼び出すこともできる。
-  - クラス（コンストラクタ関数）に定義したメソッドはスタティックメソッドと呼ばれ、インスタンスから呼び出すことができない。
+  - プロトタイプ内部に定義されたメソッドはプロトタイプメソッドと呼ばれ、インスタンスから呼び出すこともできる
+  - クラス（コンストラクタ関数）に定義したメソッドはスタティックメソッドと呼ばれ、インスタンスから呼び出すことができない
 - 継承を実現する方法
-  1. SubClass.prototypeにSuperClassのインスタンスを割り当てる。
-  1.
+  1. SubClass.prototypeにSuperClassのインスタンスを割り当てる
+  1. 具体的なデータを持たせない
      - その後SubClass.prototypeから不要なプロパーティを削除する
      - または空のコンストラクタ（Bridge）のprototypeにSuperClassのprototypeを参照させてSubClass.prototypeにBridgeのインスタンスを割り当てる
   1. SubClass.prototype.constructorがSuperClassでなくSubClassを参照するようにする。
