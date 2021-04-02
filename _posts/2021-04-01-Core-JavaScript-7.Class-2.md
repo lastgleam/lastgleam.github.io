@@ -11,14 +11,14 @@ author: "lastgleam"
 1. **prototypeによるクラスの実現**
     1. **基本実装**
     1. **クラスに具体的なデータを持たせない**
-    1. **コンストラクタ復旧**
+    1. **コンストラクタの復旧**
     1. **上位クラスへのアクセサ提供**
 1. **ES6からのクラスと継承**
 1. **まとめ**
 
 ## prototypeによるクラスの実現
 
-ES6から`class`が導入される前はどのようにclass実現したか理解する。
+ES6から`class`が導入される前はどのようにclassを実現したか理解する。
 
 ### 基本実装
 
@@ -45,7 +45,7 @@ console.log(g.every(function (v) { return v > 50; }));
 ```
 
 プロトタイプのチェーンを連結させるだけで継承が実現できる。
-だが、上の例は、`length`プロパーティが削除できる（configurableな状態である）ということと`Grade.prototype`が空の配列を参照しているということに問題がある。
+だが、上の例は`length`プロパーティが削除できてしまう（configurableな状態である）ことと`Grade.prototype`が空の配列を参照していることに問題がある。
 
 ```javascript
 g.push(90);
@@ -56,8 +56,8 @@ g.push(70);
 console.log(g); // Grade: { 0: 70, 1:80, 2:90, length:1 }
 ```
 
-`length`を削除することで`g.length`が`g.__proto__.length`を参照することになる。
-`push`で要素が1個追加されて`g.length`は0→1になる。
+`length`が削除されると`g.length`は`g.__proto__.length`を参照することになる。
+`push`で要素が1個追加されたので`g.length`は0→1になる。
 
 #### RectangleとSquareの例
 
@@ -101,7 +101,7 @@ console.log(sq.getArea()); // 25
 ```
 
 上の例もクラスの値の変更がインスタンスに影響を与えてしまう問題を抱えている。
-`delete`で`sq.width`を削除して`Square.prototype.width`に`4`を割り当てるとgetAreaが`20`を返すことになる。
+`delete`で`sq.width`を削除し`Square.prototype.width`に`4`を割り当てるとgetAreaが`20`を返してしまうことになる。
 
 ```javascript
 delete sq.width;
@@ -114,7 +114,7 @@ console.log(sq.getArea());
 ### クラスに具体的なデータを持たせない
 
 クラス（prototype）の値の変更がインスタンスに影響を与えてしまう問題の対策として、
-シンプルにprototypeのプロパーティを削除し凍結される。
+シンプルにprototypeのプロパーティを削除した後凍結させる方法がある。
 
 ```javascript
 delete Square.prototype.width;
@@ -134,7 +134,7 @@ Object.freeze(Square.prototype);
 ```
 
 `Square.prototype`が`Rectangle.prototype`を参照しつつ
-`Square.prototype`に不要なインスタンスプロパーティが存在ないようにすることが重要だ。
+不要なインスタンスプロパーティを持たないようにすることが重要だ。
 
 ### コンストラクタの復旧
 
